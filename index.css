@@ -1,5 +1,123 @@
-body{
-    background: black;
-    margin: 0;
-    padding: 0;
+body {
+  background: #fcfcfc;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #101828;
+  font-size: 40px;
+  line-height: 120%; /* 48px */
+  letter-spacing: -2%;
+  margin: 0px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #667085;
+  font-size: 16px;
+  margin: 0px;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #667085;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 86vw;
+  height: 80px;
+  flex-shrink: 0;
+  margin-top: 24px;
+  padding: 0px 7vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+button {
+  display: flex;
+  padding: 15px 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  border: none;
+}
+
+.curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  flex-direction: row;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  flex-direction: row;
+}
+
+.logo {
+  width: 116px;
+  height: 43px;
+}
+
+.hero {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 72vw;
+  align-items: center;
+}
+
+.hero .left {
+  display: flex;
+  gap: 24px;
+  width: 520px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+#squiggle {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  width: 23vw;
+}
+
+#triangle {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 2vw;
 }
