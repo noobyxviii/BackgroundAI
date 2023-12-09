@@ -1,0 +1,116 @@
+body {
+    background: #fcfcfc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #101828;
+    font-size: 40px;
+    line-height: 120%; /* 48px */
+    letter-spacing: -2%;
+    margin: 0px;
+  }
+  
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #667085;
+    font-size: 16px;
+    margin: 0px;
+  }
+  
+  a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #667085;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 86vw;
+    height: 80px;
+    flex-shrink: 0;
+    margin-top: 24px;
+    padding: 0px 7vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  
+  button {
+    display: flex;
+    padding: 15px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+  }
+  
+  .left-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row;
+  }
+  
+  .right-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    flex-direction: row;
+  }
+  
+  .logo {
+    width: 116px;
+    height: 43px;
+  }
+  
+  .hero {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 72vw;
+    align-items: center;
+  }
+  
+  #deco-items {
+    position: absolute;
+    top: 40%;
+    left: calc(50vw - 454px);
+  }
+
+  .hero > .upload-container {
+    box-sizing: border-box;
+    position: absolute;
+    width: 323px;
+    height: 323px;
+    border: 1px dashed #000000;
+    border-radius: 27px;
+  }
+
+  .upload-container > #upload-image {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    left: calc(50% - 40px);
+    top: calc(50% - 50px);
+  }
