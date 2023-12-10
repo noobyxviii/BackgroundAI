@@ -1,168 +1,165 @@
 body {
-    background: #fcfcfc;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: #101828;
-    font-size: 40px;
-    line-height: 120%;
-    /* 48px */
-    letter-spacing: -2%;
-    margin: 0px;
-  }
-  
-  p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    color: #667085;
-    font-size: 16px;
-    margin: 0px;
-  }
-  
-  a {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    color: #667085;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  
-  header {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 86vw;
-    height: 80px;
-    flex-shrink: 0;
-    margin-top: 24px;
-    padding: 0px 7vw;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-  }
-  
-  button {
-    display: flex;
-    padding: 15px 30px;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border-radius: 30px;
-    border: none;
-  }
-  
-  .left-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    flex-direction: row;
-  }
-  
-  .right-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 32px;
-    flex-direction: row;
-  }
-  
-  .logo {
-    width: 116px;
-    height: 43px;
-  }
-  
-  .hero {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 72vw;
-    align-items: center;
-  }
-  
-  .hero>h1 {
-    position: absolute;
-    width: 738px;
-    height: 80px;
-    left: calc(50% - 738px/2);
-    top: -320px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 59px;
-    line-height: 71px;
-    text-align: center;
-    letter-spacing: -0.03em;
-    color: #262626;
-  }
-  
-  .hero>#form-steps {
-    position: absolute;
-    top: -230px;
-  }
-  
-  #deco-items {
-    position: absolute;
-    top: 40%;
-    left: calc(50vw - 454px);
-    z-index: -2;
-  }
-  
-  .hero>.upload-container {
-    box-sizing: border-box;
-    position: absolute;
-    width: 323px;
-    height: 323px;
-    border-radius: 27px;
-    z-index: 1;
-    box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.15);
-  }
+  background: #fcfcfc;
+  margin: 0;
+  padding: 0;
+}
 
-  .hero > .upload-container > #bg-prompt {
-    position: absolute;
-    top: 35px;
-    left: calc(10% - 10px);
-    width: 80%;
-    height: 50%;
-    resize: none;
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    background: #EBEBEB;
-    font-family: 'Inter';
-  }
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #101828;
+  font-size: 40px;
+  line-height: 120%;
+  /* 48px */
+  letter-spacing: -2%;
+  margin: 0px;
+}
 
-  .upload-container > form > #image-label {
-    position: absolute;
-    left: calc(50% - 210px/2);
-    top: 210px;
-    width: 210px;
-    height: 75px;
-    line-height: 75px;
-    background: #FF0066;
-    border-radius: 71px;
-    align-items: center;
-    text-align: center;
-    font-family: 'Inter';
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-  }
-  
-  #file {
-    display: none;
-  }
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #667085;
+  font-size: 16px;
+  margin: 0px;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #667085;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 86vw;
+  height: 80px;
+  flex-shrink: 0;
+  margin-top: 24px;
+  padding: 0px 7vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+button {
+  display: flex;
+  padding: 15px 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  border: none;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  flex-direction: row;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  flex-direction: row;
+}
+
+.logo {
+  width: 116px;
+  height: 43px;
+}
+
+.hero {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 72vw;
+  align-items: center;
+}
+
+.hero>h1 {
+  position: absolute;
+  width: 738px;
+  height: 80px;
+  left: calc(50% - 738px/2);
+  top: -320px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 71px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #262626;
+}
+
+.hero>#form-steps {
+  position: absolute;
+  top: -230px;
+}
+
+#deco-items {
+  position: absolute;
+  top: 40%;
+  left: calc(50vw - 454px);
+  z-index: -2;
+}
+
+.hero>.upload-container {
+  box-sizing: border-box;
+  position: absolute;
+  width: 323px;
+  height: 323px;
+  border-radius: 27px;
+  z-index: 1;
+  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.15);
+}
+
+.hero > .upload-container > form > #bg-prompt {
+  position: absolute;
+  top: 35px;
+  left: 10%;
+  width: calc(80% - 40px);
+  height: 50%;
+  resize: none;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  background: #EBEBEB;
+  font-family: 'Inter';
+}
+
+.upload-container > form > #submit {
+  position: absolute;
+  left: calc(50% - 133px/2);
+  top: 250px;
+  width: 133px;
+  height: 48px;
+  background: #FF0066;
+  border-radius: 71px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Inter";
+}
+
+#file {
+  display: none;
+}

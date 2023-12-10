@@ -163,4 +163,6 @@ button {
   border-width: 2px;
   border-color: #E4E4E4;
   border-style: solid;
+  width: 256px;
+  height: 256px;
 }

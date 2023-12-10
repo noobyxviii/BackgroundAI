@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BackAI | Upload Image</title>
+  <title>BackAI | Custom Background</title>
   <link rel="stylesheet" href="./static/styles/bg-prompt.css" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" />
@@ -44,7 +44,10 @@
 
 
     <div class="upload-container">
+      <form action='{{url_for("upload_prompt", file_path=file_path)}}' method="post" id="image-upload-form" enctype="multipart/form-data">
         <textarea id="bg-prompt" name="bg-prompt" placeholder="I want my replacement background to be..."></textarea>
+        <button type="submit" id="submit">Submit</button>          
+      </form>
     </div>
   </div>
   <img src="./static/images/deco-items.svg" id="deco-items">
