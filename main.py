@@ -32,4 +32,8 @@ def bg_prompt():
   file_path = request.args.get("file_path")
   return render_template("bg-prompt.html")
 
+@app.route("/result")
+def result_page():
+  return render_template("result.html")
+
 app.run("0.0.0.0", 8080, debug=True)
