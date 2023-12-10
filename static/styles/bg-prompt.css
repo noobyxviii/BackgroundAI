@@ -9,7 +9,8 @@ body {
     font-weight: 600;
     color: #101828;
     font-size: 40px;
-    line-height: 120%; /* 48px */
+    line-height: 120%;
+    /* 48px */
     letter-spacing: -2%;
     margin: 0px;
   }
@@ -82,7 +83,7 @@ body {
   
   .hero {
     position: absolute;
-    top: 51%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -92,25 +93,76 @@ body {
     align-items: center;
   }
   
+  .hero>h1 {
+    position: absolute;
+    width: 738px;
+    height: 80px;
+    left: calc(50% - 738px/2);
+    top: -320px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 71px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #262626;
+  }
+  
+  .hero>#form-steps {
+    position: absolute;
+    top: -230px;
+  }
+  
   #deco-items {
     position: absolute;
     top: 40%;
     left: calc(50vw - 454px);
+    z-index: -2;
   }
-
-  .hero > .upload-container {
+  
+  .hero>.upload-container {
     box-sizing: border-box;
     position: absolute;
     width: 323px;
     height: 323px;
-    border: 1px dashed #000000;
     border-radius: 27px;
+    z-index: 1;
+    box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.15);
   }
 
-  .upload-container > #upload-image {
+  .hero > .upload-container > #bg-prompt {
     position: absolute;
-    width: 80px;
-    height: 100px;
-    left: calc(50% - 40px);
-    top: calc(50% - 50px);
+    top: 35px;
+    left: calc(10% - 10px);
+    width: 80%;
+    height: 50%;
+    resize: none;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background: #EBEBEB;
+    font-family: 'Inter';
+  }
+
+  .upload-container > form > #image-label {
+    position: absolute;
+    left: calc(50% - 210px/2);
+    top: 210px;
+    width: 210px;
+    height: 75px;
+    line-height: 75px;
+    background: #FF0066;
+    border-radius: 71px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #file {
+    display: none;
   }
